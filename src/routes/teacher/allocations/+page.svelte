@@ -182,14 +182,14 @@
       <h2>Tasks</h2>
       <button on:click={() => tickAll(selectedTasks, $tasks)}>Tick All</button>
       <button on:click={() => clearAll(selectedTasks)}>Clear All</button>
-      <ul>
+      <div>
         {#each $tasks as task}
-          <li>
+          <div>
             <input type="checkbox" checked={$selectedTasks.has(task.id)} on:change={() => toggleSelection(selectedTasks, task.id)}>
             {task.name}
-          </li>
+          </div>
         {/each}
-      </ul>
+        </div>
     </section>
 
     <!-- Classes Section -->
@@ -197,14 +197,14 @@
       <h2>Classes</h2>
       <button on:click={() => tickAll(selectedClasses, $classes)}>Tick All</button>
       <button on:click={() => clearAll(selectedClasses)}>Clear All</button>
-      <ul>
+      <div>
         {#each $classes as classItem}
-          <li>
+          <div>
             <input type="checkbox" checked={$selectedClasses.has(classItem.id)} on:change={() => toggleSelection(selectedClasses, classItem.id)}>
             {classItem.name}
-          </li>
+          </div>
         {/each}
-      </ul>
+        </div>
     </section>
 
     <!-- Assign Button -->
@@ -227,6 +227,7 @@
             {#if index < $groupedAssignments[classId].length - 1}, {/if}
           {/each}
         </div>
+        <br/>
       {/each}
     </section>
   {/if}
@@ -238,5 +239,8 @@
   }
   button {
     margin-right: 0.5rem;
+  }
+  ul {
+    list-style-type: none;
   }
 </style>

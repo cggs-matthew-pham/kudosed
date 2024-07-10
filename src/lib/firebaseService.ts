@@ -38,7 +38,7 @@ export interface CustomUser extends User {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
-console.log(import.meta.env); // Debugging log
+// console.log(import.meta.env); // Debugging log
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,

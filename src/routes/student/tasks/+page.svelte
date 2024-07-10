@@ -105,14 +105,14 @@
   {/if}
   
   <h2>Your Tasks</h2>
-  <ul>
+  <div>
     {#each $tasks as task}
-      <li>
+      <div>
         <input type="checkbox" checked={$taskCompletion[task.id] || false} on:change={() => updateTaskCompletion(task.id, !$taskCompletion[task.id])}>
         {task.name}
-      </li>
+      </div>
     {/each}
-  </ul>
+    </div>
   
   <style>
     ul {

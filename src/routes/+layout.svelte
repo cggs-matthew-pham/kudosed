@@ -1,4 +1,6 @@
+
 <script lang="ts">
+  import '../app.css';
   import { onMount } from "svelte";
   import { user, loginOrRegister, logout } from "$lib/firebaseService";
   import type { CustomUser } from "$lib/firebaseService";
@@ -32,6 +34,8 @@
     logout();
   }
 </script>
+<div class="container">
+
 
 {#if userData}
   {#if registering}
@@ -49,12 +53,17 @@
     <button on:click={handleLogout}>Logout</button>
   {/if}
   <slot />
+
 {:else}
   <div>
     <button on:click={handleLogin}>Login with Google</button>
   </div>
 
 {/if}
+</div>
 
   
-  
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+    />

@@ -1,4 +1,5 @@
 <script lang="ts">
+ 
     import { user, logout, loginOrRegister } from "$lib/firebaseService";
     import { onMount } from "svelte";
     import type { CustomUser } from "$lib/firebaseService";
@@ -26,7 +27,7 @@
       registering = false;
     }
   </script>
-  
+  <div class="container">
   {#if userData}
     <button on:click={logout}>Logout</button>
   {:else}
@@ -42,4 +43,5 @@
       </div>
     {/if}
   {/if}
+</div>
   
