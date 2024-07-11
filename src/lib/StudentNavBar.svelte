@@ -8,6 +8,7 @@
       <li><a href="/student">Dashboard</a></li>
       <li><a href="/student/tasks">Tasks</a></li>
       <li><a href="/student/journal">Journal</a></li>
+      <li><a href="/student/self-assessment">Self Assessment</a></li>
     </ul>
   </nav>
 </div>

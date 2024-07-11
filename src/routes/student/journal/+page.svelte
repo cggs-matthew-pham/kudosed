@@ -123,11 +123,7 @@
         display: block;
         margin-top: 1rem;
     }
-    input[type="text"], input[type="file"], select, textarea {
-        width: 100%;
-        padding: 0.5rem;
-        margin-top: 0.5rem;
-    }
+
     textarea {
         height: 100px;
     }
