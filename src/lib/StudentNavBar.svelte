@@ -7,7 +7,7 @@
     <ul>
       <li><a href="/student">Dashboard</a></li>
       <li><a href="/student/tasks">Tasks</a></li>
-      <!-- Add more student-specific links here -->
+      <li><a href="/student/journal">Journal</a></li>
     </ul>
   </nav>
 </div>

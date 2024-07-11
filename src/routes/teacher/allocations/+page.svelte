@@ -240,7 +240,4 @@
   button {
     margin-right: 0.5rem;
   }
-  ul {
-    list-style-type: none;
-  }
 </style>

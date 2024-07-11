@@ -36,8 +36,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tinymce/tinymce-svelte": "^3.0.0",
 		"dotenv": "^16.4.5",
 		"firebase": "^10.12.3",
+		"tinymce": "^7.2.1",
 		"vercel": "^34.3.1"
 	}
 }
